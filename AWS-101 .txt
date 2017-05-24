@@ -1,0 +1,43 @@
+1) VPC (15 marks)
+
+     a. Create one VPC--- 172.20.0.0/16  
+
+     b. Create three subnets 172.20.1.0/24 , 172.20.2.0/24, 172.20.3.0/24
+
+     c. route tables – public – 172.20.1.0/24, private – 172.20.2.0/24, 172.20.3.0/24
+
+2) IAM (10 Marks)
+
+     a. Create one IAM user with read only access to all services; also create access key, secret access key & password (need to share this username & password with Mahadev).
+
+     b. Create another IAM user with EC2 full access.
+
+     c. Create IAM Role with S3-full access ( attach it to the below instance).
+
+3) EC2 ( 10 Marks)
+
+     a. Launch one instance in public subnet (t2.micro & Amazon linux).
+
+     b. Instances is accessible from anywhere through port – 22,80,443,8443,8080
+
+     c. All traffic is open within same security group
+
+     d. Create 10 gb EBS GP2 volume & attach it to instance (no need to mount).
+
+4) S3 & CloudFront (10 Marks)
+
+     a. Create S3 Bucket & put 2 objects in that bucket
+
+     b. Make one public and other private
+
+     c. Create cloudfront distribution of the same bucket ( distribute only public object)
+
+5) CloudWatch & SNS (5 Marks)
+
+     a. Create cloud watch event rule for same instance – change in resource state.
+
+     b. Push events from cloud watch to SNS Topic
+
+
+All are expected to share their read only credentials with Mahadev for checking. 
+
